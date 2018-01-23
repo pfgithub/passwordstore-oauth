@@ -70,8 +70,8 @@
     "no-regex-spaces": 0,         // disallow multiple spaces in a regular expression literal
     "no-sparse-arrays": 0,        // disallow sparse arrays
     "no-unreachable": 2,          // disallow unreachable statements after a return, throw, continue, or break statement
-    "use-isnan": 0,               // disallow comparisons with the value NaN
-    "valid-jsdoc": 0,             // Ensure JSDoc comments are valid (off by default)
+    "use-isnan": 2,               // disallow comparisons with the value NaN
+    "valid-jsdoc": 2,             // Ensure JSDoc comments are valid (off by default)
     "valid-typeof": 0,            // Ensure that the results of typeof are compared against a valid string
 
 
@@ -88,7 +88,7 @@
     "no-alert": 0,              // disallow the use of alert, confirm, and prompt
     "no-caller": 0,             // disallow use of arguments.caller or arguments.callee
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
-    "no-else-return": 2,        // disallow else after a return in an if (off by default)
+    "no-else-return": 1,        // disallow else after a return in an if (off by default)
     "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
     "no-eq-null": 2,            // disallow comparisons to null without a type-checking operator (off by default)
     "no-eval": 2,               // disallow use of eval()
@@ -98,7 +98,7 @@
     "no-floating-decimal": 0,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
     "no-implied-eval": 2,       // disallow use of eval()-like methods
     "no-iterator": 0,           // disallow usage of __iterator__ property
-    "no-labels": 0,             // disallow use of labeled statements
+    "no-labels": 2,             // disallow use of labeled statements
     "no-lone-blocks": 2,        // disallow unnecessary nested blocks
     "no-loop-func": 2,          // disallow creation of functions within loops
     "no-multi-spaces": 0,       // disallow use of multiple spaces
@@ -197,7 +197,7 @@
     "space-before-function-paren": [1, "never"],      // require a space after certain keywords (off by default)
     "space-before-blocks": [1, "always"],       // require or disallow space before blocks (off by default)
     "space-in-parens": 0,           // require or disallow spaces inside parentheses (off by default)
-    "space-unary-ops": 0,           // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
+    "space-unary-ops": 1,           // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "indent": [1, 2, {"SwitchCase": 1}],
 
 
