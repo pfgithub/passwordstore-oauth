@@ -23,6 +23,10 @@ const userSchema = new mongoose.Schema({
     "unique": true,
     "validate": [{ "validator": validateUsername, "msg": "Invalid username" }],
   },
+  "password": {"type": String, "required": true}, // , unique: true. Error: password hash must be unique! Please try again
+  "data": Buffer,
+  "2faSecret": String,
+  "_version": {"type": String, "default": "VERSION_1"}
 }, { "timestamps": true });
 const User = mongoose.model("User", userSchema);
 
