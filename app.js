@@ -6,11 +6,16 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const stylus = require("stylus");
 const chalk = require("chalk");
+const mongoose = require("mongoose");
 
 const index = require("./routes/index");
 const users = require("./routes/users");
+const config = require("./config");
 
 const app = express();
+
+
+mongoose.connect(config.connection);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
